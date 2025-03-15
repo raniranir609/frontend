@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body{
+            font-size: white;
+        }
+/* styles for screens larger than 1024px */
+@media (min-width: 600px) and (max-width: 900px){
+  body {
+    background-color:blue;
+    font-size: 18px;
+   } 
+  }
+
+
+/* styles for screens larger than 1024px */
+@media (min-width: 900px) and (max-width: 1024px) {
+  body {
+    background-color: red;
+    font-size: 20px;
+   } 
+  }
+
+
+/*styles for screens larger than 600px*/
+  @media (orientation:portrait){
+  body {
+    background-color: blue;
+    font-size: 18px;
+   } 
+  }
+
+  @media (orientation:landscape){
+  body {
+    background-color: red;
+    font-size: 20px;
+   } 
+  }
+    </style>
+    <h1>Responsive design with media queries</h1>
+    <p>asdfghjkkkkkllllllllasdfghjkasdfghjasdfg</p>
+
+</body>
+</html>

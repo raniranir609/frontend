@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #4f4f44;
+            color: #333;/*Dark text contrast*/
+        }
+        header{
+            background-color: #d90016;/*Dominos red*/
+            color:white;
+            padding: 20px;
+            text-align:center;
+        }
+        nav{
+            background-color: #333;
+            color:white;
+            padding:10px;
+        }
+        nav ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+            text-align: center;;
+        }
+        nav li{
+            display:inline;
+            margin:0 15px;
+        }
+        nav a{
+            color:white;
+            text-decoration: none;
+            padding:8px 16px;/*slightly larger padding*/
+            border-radius: 5px;/*rounded corners for buttons*/;
+        
+         transition:background-color 0.3 ease;/*smooth hover effect*/
+    }
+    main{
+        padding: 20px;
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));/*Responsiv grid*/
+        gap:20px;/*spacing between grid items*/
+    }
+    .pizza-card{
+        border:1px solid#ddd;
+        padding:15px;
+        background-color: white;
+        border-radius: 8px;/*Rounded corners for cards*/;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+    transition:transform 0.2s ease,box-shadow 0.2s ease;/*Hover effect*/
+    }
+    .pizza-card img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;/*Round image corners*/;
+        margin-bottom: 10px;
+    }
+    .pizza-card h2{
+        margin-top: 0;
+        color: #d90016;/*Domino's red for titles*/
+    }
+    .pizza-card p{
+        color: #666;/*Slightly lighter text for descriptions*/;
+    }
+    footer{
+        background-color: #333;
+        color:white;
+        padding: 10px;
+        text-align: center;
+        position:relative;/*changed to relative*/;
+        bottom: 0;
+        width:100%;
+        margin-top:20px;/*Add some top margin to separate from content*/;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Locations</a></li>
+        </ul>
+        </nav>
+        <main>
+            <div class="pizza-card">
+                <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/WebSearchProductV1/74109515-00c8-4667-ba31-4b96574e73df_SmallCardGarlicBreadwithPepperonikorean.jpg?ver=V0.0.1" alt="Pepperoni pizza">
+                <h2>Pepperoni Feast</h2>
+                <p>Classic pepperoni pizza with extra cheese.Atimeless favorite.</p>
+            </div>
+            <div class="pizza-card">
+                <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a542d031-5fc8-4902-bbb3-25eebd3ace7e_veggie_paradise_side.webp?ver=V0.0.1" alt="Margherita pizza">
+                <h2>Margherita</h2>
+                <p>simple,yet delicious.Tomato sauce,mozzarella,and basil.</p>
+            </div>
+            <div class="pizza-card">
+                <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/HomeProductV1/a124eca5-86d1-49c3-87c3-8b5820f4f306_chickendominatorsidejpgFull2x2702.jpg?ver=V0.0.1" alt="Chicken pizza">
+                <h2>BBQ Chicken</h2>
+                <p>Tender chicken,BBQsauce,onions,and peppers.</p>
+            </div>
+        </main>
+        <footer>
+            &copy;2024 Domino's pizza
+        </footer>
+
+
+
+    </header>
+</body>
+</html>
